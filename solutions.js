@@ -1,5 +1,5 @@
 
-/*Functions is a series of instructions that instructs the computer to perform a certain task. Functions allow you to reuse your code.
+/*A function is a series of instructions that instructs the computer to perform a certain task. Functions allow you to reuse your code.
 Invoke your functions and console.log your results*/
 
 
@@ -48,5 +48,48 @@ function selfIntro(first, last, current, birth){
   return 'Hello, my name is ' + fullName(first, last) + ' and I am ' + findAge(current, birth) + ' years old.'; 
 }
 console.log(selfIntro('Kanye', 'West', 2021, 1977));
+
+
+//6. Create a function named 'ozToCup' which takes one number parameter oz. This function will convert fluid ounce to cup.
+
+function ozToCup(oz){
+  return oz/8;
+}
+console.log(ozToCup(8));
+
+
+/*7. Create a function named 'yenConverter which takes one number parameter dollar. This function will convert dollar to yen. 
+Please use today's dollar to yen exchange rate.*/
+
+function yenConverter(dollar){
+  return dollar * 115;
+}
+console.log(yenConverter(2));
+
+
+//8. Create a function named 'tempConverter' which takes one number parameter c. This function will convert celsius to fahrenheit.
+
+function tempConverter(c){
+  return (c * 1.8) + 32;
+}
+console.log(tempConverter(32));
+
+
+//9. Create a functin named 'throwBack' which takes one array parameter arr. This function will reverse the order of the elements in an array.
+
+function throwBack(arr){
+  return arr.reverse();
+}
+console.log(throwBack(['in', 'bring', 'you', 'what', 'only', 'find', 'will', 'you']));
+
+
+/*10. Create a function named 'unite' which takes one array parameter arr. 
+This function will reverse the order of the elements in an array and then join all the elements into a string. 
+Please make use of the throwBack function for this question*/
+
+function unite(arr){
+  return throwBack(arr).join();
+}
+console.log(unite(['in', 'bring', 'you', 'what', 'only', 'find', 'will', 'you']));
 
 
